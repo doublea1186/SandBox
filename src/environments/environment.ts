@@ -4,9 +4,16 @@
 
 export const environment = {
   production: false,
-    stripeKey: 'pk_test_5WCjRSjKyK69l5kVXESIDSj300LzHuWri9',
+  stripeKey: 'pk_test_5WCjRSjKyK69l5kVXESIDSj300LzHuWri9',
     // Your Firebase Config {}
-
+  firebase: {
+    apiKey: "AIzaSyAt-rSAzKfZR6nq-A0Vnq4dn4x9CIgmQSQ",
+    authDomain: "smart-calendar-8014d.firebaseapp.com",
+    databaseURL: "https://smart-calendar-8014d.firebaseio.com",
+    projectId: "smart-calendar-8014d",
+    storageBucket: "smart-calendar-8014d.appspot.com",
+    messagingSenderId: "899522799012"
+  }
 };
 
 /*

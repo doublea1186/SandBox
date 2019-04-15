@@ -4,6 +4,11 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import {PaymentModule} from './payments/payment/payment.module';
+import {AngularFireModule} from '@angular/fire';
+import {AngularFireDatabaseModule} from '@angular/fire/database';
+import {AngularFireAuthModule} from '@angular/fire/auth';
+import {environment} from '../environments/environment';
+
 
 @NgModule({
   declarations: [
@@ -11,7 +16,10 @@ import {PaymentModule} from './payments/payment/payment.module';
   ],
   imports: [
     BrowserModule,
-    PaymentModule
+    PaymentModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireAuthModule,
+    AngularFireDatabaseModule
   ],
   providers: [],
   bootstrap: [AppComponent]
